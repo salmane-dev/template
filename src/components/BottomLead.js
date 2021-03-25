@@ -2,7 +2,7 @@ import React from "react";
 
 const BottomLead = ({actionText, description, mainActionText, extraActionText}) => {
   return (
-    <div className="flex flex-col m-4 justify-center h-screen bg-blue-800 lg:pt-24 lg:pb-14 lg:bg-cover lg:h-full lg:bg-action">
+    <div id="contact" className="flex flex-col p-4 justify-center h-screen bg-blue-800 lg:pt-24 lg:pb-14 lg:bg-cover lg:h-full lg:bg-action">
       <p className="p-5 text-5xl font-bold leading-normal text-center text-white lg:text-4xl lg:pt-10">{actionText}</p>
       <p className="pl-12 pr-12 text-2xl leading-8 text-center text-gray-200 lg:text-gray-200 lg:font-medium">{description}</p>
       
