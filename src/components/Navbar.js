@@ -4,7 +4,7 @@ import Unsubscribe from '../Unsubscribe';
 import App from '../App';
  
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
   NavLink,
   Switch, 
