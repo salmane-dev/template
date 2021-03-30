@@ -16,13 +16,14 @@ import Step from './components/Step';
 import BottomLead from './components/BottomLead';
 import Footer from './components/Footer';
 import Unsubscribe from './Unsubscribe';
+import Privacy from './Privacy';
 
 import logo from "./assets/logo.png";
 import Rectangle_3 from './assets/growing-money.png';
 import Rectangle_4 from './assets/online-shopping.png';
 import Rectangle_5 from './assets/Rectangle_5.png';
 
-
+  
 function App() {
   const data = {
     hero:{
@@ -98,6 +99,11 @@ function App() {
           />
  
             </Route>
+            
+            <Route exact path="/Privacy" >
+              <Privacy/>
+            </Route>
+
             <Route exact path="/Unsubscribe" >
               <Unsubscribe/>
             </Route>

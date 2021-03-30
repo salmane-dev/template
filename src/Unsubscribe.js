@@ -6,7 +6,7 @@ import BottomLead from "./components/BottomLead";
 
 const Unsubscribe = ({appType, tagLine, description, mainActionText, extraActionText}) => {
   return (
-    <div id="Unsubscribe" className="h-screen"> 
+    <div id="Unsubscribe" className=""> 
           <div className="flex flex-col justify-center h-screen bg-blue-800 lg:pt-24 lg:pb-14 lg:bg-cover lg:h-full lg:bg-action">
       <p className="p-5 text-5xl font-bold leading-normal text-center text-white lg:text-4xl lg:pt-10"> UNSUBSCRIBE</p>
       <p className="pl-12 pr-12 text-xl leading-8 text-center text-white lg:text-gray-200 lg:font-medium">

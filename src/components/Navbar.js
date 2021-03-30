@@ -42,9 +42,9 @@ const Navbar = ({logo}) => {
   return (
     <Router>
 
-    <div className="flex flex-row items-center justify-between h-28">
-      <a href="/" className="pl-7 logo lg:ml-10">
-        <img height="65%" width="65%" src={logo} alt="logo" />
+    <div className="flex flex-row items-center justify-between h-20">
+      <a href="/" className="pl-7 lg:ml-10">
+        <h2 className="text-2xl font-bold" >Yourwebsite.com</h2>
       </a>
 
           {/* Mobile Nav */}
@@ -59,7 +59,7 @@ const Navbar = ({logo}) => {
                 <div onClick={()=>setOpenNav(false)} className="absolute right-12 top-9"><img height="30" width="30" src={close_icon} alt="" /></div>
                 <div className="flex flex-col items-center justify-around h-full pt-5">
                   <a onClick={()=>setOpenNav(false)} href="/" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
-                  <a onClick={()=>setOpenNav(false)} href="/#privacy" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Privacy</a>
+                  <a onClick={()=>setOpenNav(false)} href="/privacy" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Privacy</a>
                   <a onClick={()=>setOpenNav(false)} href="/Unsubscribe" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Unsubscribe</a>
                   <a onClick={()=>setOpenNav(false)} href="/#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Contact</a>
                 </div>
@@ -71,7 +71,7 @@ const Navbar = ({logo}) => {
 
           <div className="flex justify-around w-2/5 mr-12 lg:visible sm:invisible">
               <a href="/" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
-              <a href="/#privacy" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Privacy</a>
+              <a href="/privacy" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Privacy</a>
               <a href="/Unsubscribe" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Unsubscribe</a>
               <a href="/#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Contact</a>
           </div>
