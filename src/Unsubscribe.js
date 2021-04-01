@@ -7,13 +7,13 @@ import BottomLead from "./components/BottomLead";
 const Unsubscribe = ({appType, tagLine, description, mainActionText, extraActionText, sitename}) => {
   return (
     <div id="Unsubscribe" className=""> 
-          <div className="flex flex-col justify-center h-screen bg-blue-800 lg:pt-24 lg:pb-14 lg:bg-cover lg:h-full lg:bg-action">
+          <div className="flex flex-col justify-center h-screen bg-blue-800 lg:pt-24 lg:pb-14 lg:bg-cover lg:h-full bg-unsubscribe">
       <p className="p-5 text-5xl font-bold leading-normal text-center text-white lg:text-4xl lg:pt-10"> UNSUBSCRIBE</p>
       <p className="pl-12 pr-12 text-xl leading-8 text-center text-white lg:font-medium">
         If at any time you'd like to unsubscribe from our mailing list, please enter your email address below.
       </p>
       
-      <div className="flex flex-col flex-wrap items-center justify-center py-8 ">
+      <div className="flex flex-col flex-wrap items-center justify-center p-8 ">
          
           <form className="w-full max-w-lg">
      

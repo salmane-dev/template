@@ -21,8 +21,11 @@ import Notfound from './Notfound';
 
 import logo from "./assets/logo.png";
 import Rectangle_3 from './assets/growing-money.png';
-import Rectangle_4 from './assets/online-shopping.png';
+import Rectangle_4 from './assets/online-shopping.png'; 
 import Rectangle_5 from './assets/Rectangle_5.png';
+import Rectangle_6 from './assets/action.png'; 
+import Rectangle_7 from './assets/action.png'; 
+ 
 
 
 function App() {
@@ -34,7 +37,12 @@ function App() {
       description: 'best money-saving offers on the Web',
       mainActionText: 'Contact us',
       extraActionText: 'Unsubscribe',
-      sitename: 'Yourwebsite.com'
+      sitename: 'Yourwebsite.com', 
+      primarycolor: '#ea580c',
+      primarycolorhover: '#c2410c',
+      hero_bg: 'https://images.unsplash.com/photo-1574607383363-5b5f1747b37b',
+      action_bg: 'https://images.unsplash.com/photo-1534536281715-e28d76689b4d',
+      unsubscripbe_bg:'https://images.unsplash.com/photo-1533289408336-ac92d0dbf036',
     },
     step1: {
       title: 'Create an account',
@@ -61,6 +69,9 @@ function App() {
     
     <Router>
     <div className="box-border">
+   
+
+
       <div className="flex flex-col min-h-screen">
         
         <Navbar logo={logo}/>
@@ -72,6 +83,7 @@ function App() {
                     description={data.hero.description}
                     mainActionText={data.hero.mainActionText}
                     extraActionText={data.hero.extraActionText}
+                    primarycolor={data.hero.primarycolor}
                   />
                   
                   {/* <div id="divider" className="rounded-full ring-2 ring-gray-200 lg:w-1/2 lg:mx-auto "></div> */}
@@ -99,6 +111,7 @@ function App() {
                       mainActionText={data.bottomLead.mainActionText}
                       extraActionText={data.bottomLead.extraActionText}
                       sitename={data.hero.sitename}
+                      primarycolor={data.hero.primarycolor}
                     />
             </Route>
               
@@ -119,6 +132,16 @@ function App() {
         <Footer sitename={data.hero.sitename}/>
       </div>
     </div>
+    
+    <style dangerouslySetInnerHTML={{__html: `
+      .bg-orange-600 { background-color:  `+data.hero.primarycolor+` }
+      .bg-orange-700:hover, .bg-orange-600:hover { background-color:  `+data.hero.primarycolorhover+` }
+      .bg-action2 {background-image: url(`+data.hero.action_bg+`)}
+      .bg-hero2 {background-image: url(`+data.hero.hero_bg+`)}
+      .bg-unsubscribe {background-image: url(`+data.hero.unsubscripbe_bg+`)}
+    `}} />
+
+
   </Router>
   );
 }

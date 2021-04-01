@@ -1,9 +1,9 @@
 import React from "react";
 
-const BottomLead = ({actionText, description, mainActionText, extraActionText,sitename}) => {
+const BottomLead = ({actionText, description, mainActionText, extraActionText,sitename,primarycolor}) => {
   return (
-    <div id="contact" className="flex flex-col p-4 justify-center bg-blue-800 lg:pt-24 lg:pb-14 lg:bg-cover lg:h-full lg:bg-action">
-      <p className="p-5 text-5xl font-bold leading-normal text-center text-white lg:text-4xl lg:pt-10">{actionText}</p>
+    <div className="flex flex-col p-4 justify-center bg-blue-800 lg:pt-24 lg:pb-14  bg-cover lg:h-full bg-action2">
+      <p id="contact" className="p-5 text-5xl font-bold leading-normal text-center text-white lg:text-4xl lg:pt-10">{actionText}</p>
       <p className="pl-12 pr-12 text-2xl leading-8 text-center text-gray-200 lg:text-gray-200 lg:font-medium">{description}</p>
       
       <div className="flex flex-col flex-wrap items-center justify-center ">
@@ -39,17 +39,23 @@ const BottomLead = ({actionText, description, mainActionText, extraActionText,si
 
       <div className="flex flex-col flex-wrap items-center justify-center w-full h-48 pt-5 lg:flex-row lg:pt-1">
              
-        <button className="pt-3 pb-3 pl-14 pr-14 mt-1 text-2xl font-semibold text-center text-white transition-all bg-orange-600 shadow-2xl lg:mt-0 rounded-xl hover:bg-orange-700 focus:outline-none ring-2 ring-orange-600 " >
+        <button className="pt-3 pb-3 pl-14 pr-14 mt-1 text-2xl font-semibold text-center text-white transition-all shadow-2xl bg-orange-600 lg:mt-0 rounded-xl hover:bg-orange-700 focus:outline-none ring-2 ring-orange-600 " >
           {mainActionText}
         </button>
         
 
 
       </div>
-        <p className="pl-12 pr-12 text-2xl mb-12 leading-8 text-center text-white lg:text-white lg:font-medium">
+        <p className="pl-12 pr-12 text-2xl mb-4 leading-8 text-center text-white lg:text-white lg:font-medium">
         Thank you for visiting. If you have any questions or comments,
          please visit our Privacy Policy page or write to <a href={"mailto:support@"+ sitename}>support@{ sitename}</a>  
         </p>
+
+        <div className="text-right">
+          <a href="#top" className="text-3xl text-white font-semibold mr-4 py-2 px-5 transition-all rounded-full  hover:bg-orange-700 focus:outline-none ring-4 ring-orange-600 bg-orange-600">
+              &#8593;
+          </a>
+        </div>
     </div>
   );
 };
