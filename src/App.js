@@ -17,6 +17,7 @@ import BottomLead from './components/BottomLead';
 import Footer from './components/Footer';
 import Unsubscribe from './Unsubscribe';
 import Privacy from './Privacy';
+import Notfound from './Notfound';
 
 import logo from "./assets/logo.png";
 import Rectangle_3 from './assets/growing-money.png';
@@ -60,49 +61,47 @@ function App() {
     
     <Router>
     <div className="box-border">
-      <div className="flex flex-col">
+      <div className="flex flex-col min-h-screen">
         
         <Navbar logo={logo}/>
         <Switch>
-            <Route exact path="/">
-              
-        <Hero 
-          appType={data.hero.appType}
-          tagLine={data.hero.tagLine}
-          description={data.hero.description}
-          mainActionText={data.hero.mainActionText}
-          extraActionText={data.hero.extraActionText}
-        />
-        
-        {/* <div id="divider" className="rounded-full ring-2 ring-gray-200 lg:w-1/2 lg:mx-auto "></div> */}
-        
-        <div id="faq" className="pt-10 mb-20 text-4xl font-semibold text-center text-blue-800 lg:font-bold">Welcome to {data.hero.sitename} ! </div>
-        
-        <Step
-          title={data.step1.title}
-          heading={'You\'ve found '+ data.hero.sitename + data.step1.heading}
-          description={data.step1.description}
-          img={data.step1.img}
-          alternate={data.step1.alternate}
-          />
-          <Step
-          title={data.step2.title}
-          heading={data.step2.heading}
-          description={data.step2.description}
-          img={data.step2.img}
-          alternate={data.step2.alternate}
-          /> 
-          
-          <BottomLead 
-            actionText={data.bottomLead.actionText}
-            description={data.bottomLead.description}
-            mainActionText={data.bottomLead.mainActionText}
-            extraActionText={data.bottomLead.extraActionText}
-            sitename={data.hero.sitename}
-          />
- 
+              <Route exact path="/">
+                  <Hero 
+                    appType={data.hero.appType}
+                    tagLine={data.hero.tagLine}
+                    description={data.hero.description}
+                    mainActionText={data.hero.mainActionText}
+                    extraActionText={data.hero.extraActionText}
+                  />
+                  
+                  {/* <div id="divider" className="rounded-full ring-2 ring-gray-200 lg:w-1/2 lg:mx-auto "></div> */}
+                  
+                  <div id="faq" className="pt-10 mb-20 text-4xl font-semibold text-center text-blue-800 lg:font-bold">Welcome to {data.hero.sitename} ! </div>
+                  
+                  <Step
+                    title={data.step1.title}
+                    heading={'You\'ve found '+ data.hero.sitename + data.step1.heading}
+                    description={data.step1.description}
+                    img={data.step1.img}
+                    alternate={data.step1.alternate}
+                    />
+                    <Step
+                    title={data.step2.title}
+                    heading={data.step2.heading}
+                    description={data.step2.description}
+                    img={data.step2.img}
+                    alternate={data.step2.alternate}
+                    /> 
+                    
+                    <BottomLead 
+                      actionText={data.bottomLead.actionText}
+                      description={data.bottomLead.description}
+                      mainActionText={data.bottomLead.mainActionText}
+                      extraActionText={data.bottomLead.extraActionText}
+                      sitename={data.hero.sitename}
+                    />
             </Route>
-            
+              
             <Route exact path="/Privacy" >
               <Privacy sitename={data.hero.sitename}/>
             </Route>
@@ -110,6 +109,11 @@ function App() {
             <Route exact path="/Unsubscribe" >
               <Unsubscribe sitename={data.hero.sitename}/>
             </Route>
+
+            <Route>
+              <Notfound sitename={data.hero.sitename}/>
+            </Route>
+
         </Switch>
 
         <Footer sitename={data.hero.sitename}/>
