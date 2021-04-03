@@ -1,20 +1,19 @@
 import React from "react";
+// import rectangle_1 from '../assets/Rectangle_1.png';
+// import rectangle_2 from '../assets/Rectangle_2.png'; 
 
-import rectangle_1 from '../assets/Rectangle_1.png';
-import rectangle_2 from '../assets/Rectangle_2.png'; 
 
-
-const Hero = ({appType, tagLine, description, mainActionText, extraActionText}) => {
+const Hero = ({ tagLine, description, mainActionText, extraActionText}) => {
   return (
     <div id="product" >
-      <div style={{textShadow:'0px 1px 1px gray'}} className="flex flex-col items-center justify-center font-sans min-h-96 bg-gray-50 lg:pt-10 lg:pb-20  min-h-screen bg-hero2 lg:bg-cover">
+      <div style={{textShadow:'0px 1px 1px gray'}} id="dazd" className="flex flex-col items-center justify-center font-sans min-h-96 bg-gray-50 lg:pt-10 lg:pb-20  min-h-screen bg-hero2 lg:bg-cover sm:bg-cover">
             <div>
-                <p className="p-2 text-4xl font-bold text-center text-blue-800 lg:mx-auto lg:w-4/6 lg:text-5xl lg:text-gray-100">
+                <p className="p-2 text-4xl font-bold text-white text-center text-blue-800 lg:mx-auto lg:w-4/6 lg:text-5xl lg:text-gray-100">
                   {tagLine}
-                </p>
+                </p>  
             </div>
             <div>
-                <p className="p-4 pt-6 font-sans text-2xl leading-10 text-center text-gray-500 lg:text-gray-200">
+                <p className="p-4 pt-6 font-sans text-2xl leading-10 text-center text-gray-200">
                   {description}
                 </p>
             </div>
@@ -25,7 +24,7 @@ const Hero = ({appType, tagLine, description, mainActionText, extraActionText}) 
                      {mainActionText}
                 </a>
                 <a  href="/Unsubscribe"
-                  className="pt-3 pb-3 text-2xl font-semibold text-center text-orange-500 transition-all rounded-full shadow-2xl lg:mr-5 hover:text-orange-500 hover:bg-gray-50 pl-11 pr-11 bg-gray-50 focus:outline-none ring-4 ring-orange-500 lg:font-medium lg:text-gray-50 lg:bg-opacity-0 lg:ring-2 lg:ring-white"
+                  className="pt-3 pb-3 text-2xl font-semibold text-center text-orange-500 transition-all rounded-full shadow-2xl lg:mr-5 hover:text-orange-500 hover:bg-gray-50 pl-11 pr-11 focus:outline-none ring-4 ring-orange-500 lg:font-medium lg:text-gray-50 lg:bg-opacity-0 lg:ring-2 lg:ring-white"
                 >
                      {extraActionText}
                 </a>

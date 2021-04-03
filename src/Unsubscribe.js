@@ -1,10 +1,8 @@
 import React from "react";
-import BottomLead from "./components/BottomLead";
-
  
 
 
-const Unsubscribe = ({appType, tagLine, description, mainActionText, extraActionText, sitename}) => {
+const Unsubscribe = ({sitename}) => {
   return (
     <div id="Unsubscribe" className=""> 
           <div className="flex flex-col justify-center h-screen bg-blue-800 lg:pt-24 lg:pb-14 lg:bg-cover lg:h-full bg-unsubscribe">

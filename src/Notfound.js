@@ -1,10 +1,6 @@
-import React from "react";
-import BottomLead from "./components/BottomLead";
+import React from "react"; 
 
- 
-
-
-const notfound = ({appType, tagLine, description, mainActionText, extraActionText, sitename}) => {
+const Notfound = () => {
   return (
     <div id="Privacy" className="flex m-auto "> 
         
@@ -18,11 +14,9 @@ const notfound = ({appType, tagLine, description, mainActionText, extraActionTex
               </h5>
             </div>
           </div>
- 
-
 
     </div>
   );
 };
 
-export default notfound;
+export default Notfound;
