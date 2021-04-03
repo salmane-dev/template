@@ -1,0 +1,33 @@
+{
+    "hero":{
+      "appType": "landing page",
+      "tagLine": "Welcome to My Awesome Website ",
+      "description": "best money-saving offers on the Web",
+      "mainActionText": "Contact us",
+      "extraActionText": "Unsubscribe",
+      "sitename": "Yourwebsite.com", 
+      "primarycolor": "#ea580c",
+      "primarycolorhover": "#c2410c",
+      "hero_bg": "https://images.unsplash.com/photo-1574607383363-5b5f1747b37b",
+      "action_bg": "https://images.unsplash.com/photo-1534536281715-e28d76689b4d",
+      "unsubscripbe_bg":"https://images.unsplash.com/photo-1533289408336-ac92d0dbf036"
+    },
+    "step1": {
+      "title": "Create an account",
+      "heading": " dedicated to finding the best money-saving offers on the Web and delivering them directly to you, the consumer.      Business profiles contain comprehensive information on contacts, products, services, trade experience and technology.",
+      "img": "https://png.pngtree.com/element_our/png_detail/20181229/library-in-books-png_300953.jpg", 
+      "alternate": false
+    },
+    "step2": {
+      "title": "Explore while shopping",
+      "heading": "We strive to provide the highest quality and lowest prices available to our customers, \n   resulting in one of the best satisfaction ratings in the industry.    If you\"re not already receiving our money-saving offers and web-only specials,contact us today.",
+      "img": "http://source.unsplash.com/kqJfP-lrl-8", 
+      "alternate": true
+    },
+    "bottomLead": {
+      "actionText": "Join us now.",
+      "description": "To receive our exclusive e-mail offers from Yourwebsite.com name companies, please complete the form bellow.",
+      "mainActionText": "Submit",
+      "extraActionText": ""
+    }
+  }
