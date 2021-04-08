@@ -14,13 +14,13 @@ const Privacy = ({sitename}) => {
               Last updated July 31st, 2020.
               </p>
               
-              <div className="flex flex-col flex-wrap items-center justify-center text-center py-8 w-8/12 mx-auto">
-                  <p className="pl-12 pr-12 m-14 text-lg leading-8 text-center text-white lg:text-gray-200 lg:font-medium">
+              <div className=" here flex flex-col flex-wrap items-center mx-auto py-8 w-10/12 sm:w-8/12 ">
+                  <p className=" text-lg leading-8 text-center text-white lg:text-gray-200 lg:font-medium">
                     BY VISITING THIS WEBSITE AND REQUESTING INFORMATION, PRODUCTS OR SERVICES THERON, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS PRIVACY POLICY. IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT PROVIDE ANY INFORMATION OR USE ANY OF THE SERVICES OR PRODUCTS OFFERED OR PROVIDED ON ANY OF THE WEBSITES REFERRED TO IN THIS PRIVACY POLICY.
 
                     PLEASE NOTE: THIS PRIVACY POLICY CHANGES FROM TIME TO TIME AND CHANGES ARE EFFECTIVE UPON POSTING. PLEASE CHECK BACK FREQUENTLY FOR UPDATES AS IT IS YOUR SOLE RESPONSIBILITY TO BE AWARE OF CHANGES.
                     </p>
-                    <p className="pl-12 pr-12 mx-14 text-lg leading-8 text-center text-white lg:text-gray-200 lg:font-medium">
+                    <p className=" text-lg leading-8 text-center text-white lg:text-gray-200 lg:font-medium">
 
                     WE DO NOT PROVIDE NOTICES OF CHANGES IN ANY MANNER OTHER THAN BY POSTING THE CHANGES AT THIS WEB SITE.
 

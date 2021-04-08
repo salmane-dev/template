@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.here{
+    min-width: 400px;
+}
